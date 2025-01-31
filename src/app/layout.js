@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,9 +28,7 @@ export default function RootLayout({ children }) {
         <main className="min-h-screen w-10/12 mx-auto py-3 place-content-center place-items-center">
           {children}
         </main>
-        <footer className="bg-slate-600 text-center">
-          <h2 className="text-2xl font-bold">Awesome NestJs Project</h2>
-        </footer>
+        <Footer></Footer>
       </body>
     </html>
   );
